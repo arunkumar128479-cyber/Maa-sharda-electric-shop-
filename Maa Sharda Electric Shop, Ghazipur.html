@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Maa Sharda Electric Shop, Ghazipur</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Hind:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#f4f6fb;--card:#fff;--text:#0e1b3d;--muted:#5f6b85;--navy:#0e1b3d;--volt:#ffc21a;--line:#e1e6f0;--green:#168a3e;
+--t-Light:#fff1bf;--t-Fan:#d8ebff;--t-Wire:#ffddd2;--t-Switch:#dbf4e3;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1124;--card:#141c33;--text:#eef1fa;--muted:#9aa6c4;--navy:#060b1a;--line:#26304d;--green:#4cc470;
+--t-Light:#3b3414;--t-Fan:#14304d;--t-Wire:#44241b;--t-Switch:#173a25}}
+:root[data-theme="dark"]{--bg:#0a1124;--card:#141c33;--text:#eef1fa;--muted:#9aa6c4;--navy:#060b1a;--line:#26304d;--green:#4cc470;
+--t-Light:#3b3414;--t-Fan:#14304d;--t-Wire:#44241b;--t-Switch:#173a25}
+*{box-sizing:border-box}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 8px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Hind,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:15px;padding-bottom:96px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--navy);z-index:30}
+h1,h2,h3,.pr,.brand{font-family:"Baloo 2",Hind,system-ui,sans-serif}
+.top{background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:space-between;padding:12px 16px}
+.brand{font-size:19px;font-weight:800;line-height:1.1;color:var(--volt)}
+.brand small{display:block;font-family:Hind,sans-serif;font-weight:400;font-size:12px;color:#c5cde4}
+.call{width:42px;height:42px;border-radius:50%;background:var(--volt);display:grid;place-items:center;text-decoration:none;font-size:19px}
+.hero{background:var(--navy);color:#fff;padding:8px 16px 26px;display:flex;align-items:center;gap:8px;border-radius:0 0 28px 28px}
+.ht{flex:1}
+.hero h2{margin:0 0 8px;font-size:27px;line-height:1.1;font-weight:800}
+.hero p{margin:0 0 14px;color:#c5cde4;line-height:1.45}
+.btn{display:inline-block;border-radius:24px;padding:10px 18px;font-weight:600;text-decoration:none;font-size:14px;margin:0 6px 6px 0}
+.btn.y{background:var(--volt);color:#0e1b3d}
+.btn.o{border:1.5px solid #5b6a94;color:#fff}
+.bulb{flex:none;width:118px;background:none;border:0;padding:0;cursor:pointer;text-align:center;color:#8d99ba;font:inherit;font-size:11px}
+.bulb svg{width:100%;display:block;overflow:visible}
+.glass{fill:#34406a;transition:fill .3s}
+.glow{opacity:0;transition:opacity .4s}
+.hero[data-on="1"] .glass{fill:#ffd34d}
+.hero[data-on="1"] .glow{opacity:.9}
+.tools{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);padding:12px 16px 8px}
+#q{width:100%;border:1.5px solid var(--line);border-radius:14px;padding:12px 14px;font:inherit;background:var(--card);color:var(--text)}
+#q:focus,button:focus-visible,a:focus-visible{outline:3px solid var(--volt);outline-offset:2px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-top:10px;scrollbar-width:none}
+.chip{flex:none;border:1.5px solid var(--line);background:var(--card);color:var(--text);border-radius:22px;padding:7px 14px;font:inherit;font-weight:500;cursor:pointer}
+.chip.on{background:var(--navy);color:var(--volt);border-color:var(--navy)}
+.trust{display:flex;gap:8px;padding:6px 16px 2px;overflow-x:auto;scrollbar-width:none}
+.trust span{flex:none;font-size:12.5px;color:var(--muted);background:var(--card);border:1px solid var(--line);border-radius:10px;padding:6px 10px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;padding:12px 16px}
+@media(min-width:640px){.grid{grid-template-columns:repeat(4,1fr)}}
+.card{background:var(--card);border-radius:18px;padding:8px 8px 12px;display:flex;flex-direction:column;gap:3px;border:1px solid var(--line)}
+.img{position:relative;border-radius:12px;display:grid;place-items:center;font-size:52px;padding:18px 0}
+.t-Light .img{background:var(--t-Light)}.t-Fan .img{background:var(--t-Fan)}.t-Wire .img{background:var(--t-Wire)}.t-Switch .img{background:var(--t-Switch)}
+.off{position:absolute;top:8px;left:8px;background:var(--volt);color:#0e1b3d;font-weight:600;font-size:11.5px;padding:2px 8px;border-radius:10px}
+.nm{padding:6px 4px 0;font-weight:500;line-height:1.25;min-height:38px}
+.pr{padding:0 4px;font-size:19px;font-weight:800}
+.mrp{font-family:Hind,sans-serif;font-size:12.5px;color:var(--muted);text-decoration:line-through;margin-left:6px;font-weight:400}
+.add{margin:6px 4px 0;border:0;border-radius:12px;padding:10px;background:var(--volt);color:#0e1b3d;font:inherit;font-weight:600;cursor:pointer}
+.step{margin:6px 4px 0;display:flex;align-items:center;justify-content:space-between;background:var(--navy);color:#fff;border-radius:12px;padding:3px}
+.step button{width:36px;height:34px;border:0;border-radius:9px;background:var(--volt);color:#0e1b3d;font-size:18px;font-weight:700;cursor:pointer}
+.empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:34px 0}
+.foot{margin:8px 16px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px 16px;line-height:1.6}
+.foot b{font-family:"Baloo 2",sans-serif;font-size:17px}
+.foot a{color:var(--text);font-weight:600}
+.pill{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:25;background:var(--navy);color:#fff;border-radius:20px;padding:8px 8px 8px 18px;display:none;align-items:center;justify-content:space-between;box-shadow:0 8px 24px rgba(0,0,0,.28)}
+.pill.on{display:flex}
+.pill.bump{animation:bump .3s}
+@keyframes bump{50%{transform:scale(1.04)}}
+.pill small{display:block;color:#c5cde4;font-size:12px}
+.pill b{font-family:"Baloo 2",sans-serif;font-size:19px}
+.pill button{border:0;border-radius:14px;padding:12px 20px;background:var(--volt);color:#0e1b3d;font:inherit;font-weight:600;cursor:pointer}
+#sheet{position:fixed;inset:0;background:rgba(5,9,22,.6);display:none;align-items:flex-end;z-index:40}
+#sheet.on{display:flex}
+.panel{background:var(--card);width:100%;max-height:92%;overflow-y:auto;border-radius:24px 24px 0 0;padding:18px 16px calc(16px + env(safe-area-inset-bottom,0px))}
+.panel h3{margin:0 0 6px;font-size:21px}
+.row{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px 0;border-bottom:1px solid var(--line)}
+.qty{display:flex;align-items:center;gap:10px;font-weight:600}
+.qty button{width:32px;height:32px;border-radius:10px;border:1.5px solid var(--line);background:none;color:var(--text);font-size:16px;cursor:pointer}
+.tot{display:flex;justify-content:space-between;font-family:"Baloo 2",sans-serif;font-size:19px;font-weight:800;padding:12px 0 2px}
+.save{color:var(--green);font-weight:600;margin-bottom:6px}
+input.f,textarea{width:100%;font:inherit;padding:11px 12px;border-radius:12px;border:1.5px solid var(--line);background:var(--bg);color:var(--text);margin-top:8px}
+.hint{color:var(--muted);font-size:12.5px;margin:8px 0 0}
+.acts{display:flex;gap:8px;margin-top:12px}
+.acts button{border:0;border-radius:14px;padding:13px;font:inherit;font-weight:600;cursor:pointer}
+.acts .c{background:var(--bg);color:var(--text)}
+.acts .s{flex:1;background:var(--volt);color:#0e1b3d}
+.pay{display:grid;gap:8px;margin-top:12px}.pay label{display:flex;gap:10px;align-items:center;border:1.5px solid var(--line);border-radius:12px;padding:10px 12px;font-weight:500;cursor:pointer}.pay input{accent-color:#ffc21a;width:18px;height:18px}
+.oid{font-family:"Baloo 2",sans-serif;font-size:30px;font-weight:800;line-height:1.1}
+.steps{margin:8px 0 0;padding:0;list-style:none}.steps li{display:flex;gap:10px;padding:6px 0;line-height:1.4}.steps b{flex:none;width:26px;height:26px;border-radius:50%;background:var(--volt);color:#0e1b3d;display:grid;place-items:center;font-size:13px}
+.btnrow{display:grid;gap:8px;margin-top:12px}.btnrow a,.btnrow button{border:0;border-radius:14px;padding:13px;font:inherit;font-weight:600;text-align:center;text-decoration:none;cursor:pointer;background:var(--volt);color:#0e1b3d}.btnrow .g{background:var(--bg);color:var(--text)}
+#qr{display:grid;place-items:center;padding:12px;background:#fff;border-radius:14px;margin:8px 0}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="top">
+<div class="brand" id="shop">Maa Sharda Electric Shop<small id="city">Ghazipur</small></div>
+<a class="call" id="callBtn" aria-label="Dukaan ko call karo">📞</a>
+</div>
+
+<section class="hero" id="hero" data-on="1">
+<div class="ht">
+<h2>Ghazipur ki apni bijli ki dukaan</h2>
+<p>Bulb se lekar fan tak. Order karo, saman ghar par.</p>
+<a class="btn y" href="#list">Saman dekho</a><a class="btn o" id="wa" target="_blank">WhatsApp karo</a>
+</div>
+<button class="bulb" id="bulb" aria-label="Bulb on ya off karo">
+<svg viewBox="0 0 100 130" aria-hidden="true">
+<defs><radialGradient id="g"><stop offset="0" stop-color="#ffe27a"/><stop offset="1" stop-color="#ffe27a" stop-opacity="0"/></radialGradient></defs>
+<circle class="glow" cx="50" cy="48" r="68" fill="url(#g)"/>
+<path class="glass" d="M50 8c-20 0-35 15-35 34 0 12 6 20 13 28 4 5 6 9 6 14v4h32v-4c0-5 2-9 6-14 7-8 13-16 13-28C85 23 70 8 50 8z"/>
+<path d="M41 90V62l9 9 9-9v28" fill="none" stroke="#0e1b3d" stroke-width="3" stroke-linejoin="round" opacity=".55"/>
+<rect x="36" y="94" width="28" height="8" rx="2" fill="#9aa6c4"/><rect x="39" y="104" width="22" height="8" rx="2" fill="#7d89aa"/><rect x="44" y="114" width="12" height="6" rx="3" fill="#5f6b85"/>
+</svg>
+Bulb dabao
+</button>
+</section>
+
+<div class="tools">
+<input id="q" type="search" placeholder="Kya chahiye? Fan, bulb, wire" oninput="draw()">
+<div class="chips" id="chips"></div>
+</div>
+<div class="trust"><span>🚚 Ghar tak delivery</span><span>💵 COD ya UPI</span><span>✅ Asli saman</span><span>ℹ️ Final rate WhatsApp par confirm hoga</span><span onclick="openTrack()" style="cursor:pointer;color:var(--text);font-weight:600">📦 Order track karo</span></div>
+<div class="grid" id="list"></div>
+
+<div class="foot">
+<b>Dukaan par aaiye</b><br>
+<span id="addrLine"></span><br><span id="timeLine"></span><br>
+<a id="callLink">Dukaan ko call karo</a>
+</div>
+
+<div class="pill" id="pill"><div><small id="cnt">0 items</small><b id="sum">₹0</b></div><button onclick="openCart()">Cart dekho</button></div>
+
+<div id="sheet" onclick="if(event.target===this)closeCart()">
+<div class="panel" id="cartPanel">
+<h3>Aapka cart</h3>
+<div id="lines"></div>
+<div class="tot"><span>Total</span><span id="tot">₹0</span></div>
+<div class="save" id="save"></div>
+<input class="f" id="name" placeholder="Aapka naam" autocomplete="name">
+<input class="f" id="phone" placeholder="Mobile number" inputmode="tel" autocomplete="tel">
+<textarea id="addr" rows="3" placeholder="Poora delivery address"></textarea>
+<div class="pay">
+<label><input type="radio" name="pm" value="COD" checked> 💵 Cash on delivery</label>
+<label id="pUpi"><input type="radio" name="pm" value="UPI"> 📲 UPI se abhi bhugtan</label>
+<label id="pQr"><input type="radio" name="pm" value="QR"> 🔳 QR scan karke bhugtan</label>
+</div>
+<p class="hint">Order WhatsApp par dukaan ko jayega.</p>
+<div class="acts"><button class="c" onclick="closeCart()">Band karo</button><button class="s" onclick="sendOrder()">WhatsApp par order bhejo</button></div>
+</div>
+<div class="panel" id="donePanel" style="display:none"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+// ===== Yahan apni dukaan ki details badlo =====
+const SHOP_NAME = "Maa Sharda Electric Shop";
+const WHATSAPP = "919889040135";
+const CITY = "Ghazipur";
+const ADDRESS = "Holipur, Nasirpur Chauraha, Ghazipur, Uttar Pradesh";
+const TIMING = "Roz subah 9 baje se shaam 8 baje tak";
+const PHONE = "+919889040135";
+const UPI_ID = ""; // apna UPI ID, jaise 9889040135@ybl (khaali ho to UPI aur QR option chhup jaate hain)
+const DELIVERY_PHONE = ""; // delivery wale ka number, jaise +919876543210
+const CATS = [["Sab","✨"],["Light","💡"],["Fan","🌀"],["Wire","🧵"],["Switch","🔘"]];
+// n=naam, p=daam, m=MRP, c=category, e=emoji (daam sample hain)
+const PRODUCTS = [
+  {id:1,n:"LED Bulb 9W",p:99,m:150,c:"Light",e:"💡"},
+  {id:2,n:"LED Tube Light 20W",p:249,m:350,c:"Light",e:"🔆"},
+  {id:3,n:"Ceiling Fan",p:1650,m:2200,c:"Fan",e:"🌀"},
+  {id:4,n:"Table Fan",p:1199,m:1599,c:"Fan",e:"🌬️"},
+  {id:5,n:"Wire 1.5mm (90m)",p:1650,m:1900,c:"Wire",e:"🧵"},
+  {id:6,n:"Wire 2.5mm (90m)",p:2650,m:2999,c:"Wire",e:"🧵"},
+  {id:7,n:"Extension Board",p:399,m:550,c:"Switch",e:"🔌"},
+  {id:8,n:"Modular Switch",p:45,m:60,c:"Switch",e:"🔘"},
+  {id:9,n:"MCB 32A",p:250,m:320,c:"Switch",e:"⚡"}
+];
+// ==============================================
+const cart = {};
+let cat = "Sab";
+const $ = id => document.getElementById(id);
+const rs = n => "₹" + n.toLocaleString("en-IN");
+document.title = SHOP_NAME + " – Electric Shop, " + CITY;
+$("city").textContent = CITY;
+$("callBtn").href = $("callLink").href = "tel:" + PHONE;
+$("wa").href = "https://wa.me/" + WHATSAPP;
+if(!UPI_ID){ $("pUpi").style.display = $("pQr").style.display = "none"; }
+$("addrLine").textContent = "📍 " + ADDRESS;
+$("timeLine").textContent = "🕘 " + TIMING;
+$("chips").innerHTML = CATS.map(c => `<button class="chip${c[0]===cat?" on":""}" onclick="setCat('${c[0]}')">${c[1]} ${c[0]}</button>`).join("");
+$("bulb").onclick = () => { const h = $("hero"); h.dataset.on = h.dataset.on === "1" ? "0" : "1"; };
+
+function setCat(c){
+  cat = c;
+  document.querySelectorAll(".chip").forEach((b,i) => b.classList.toggle("on", CATS[i][0] === c));
+  draw();
+}
+function draw(){
+  const q = $("q").value.trim().toLowerCase();
+  const list = PRODUCTS.filter(x => (cat === "Sab" || x.c === cat) && x.n.toLowerCase().includes(q));
+  $("list").innerHTML = list.length ? list.map(x => {
+    const off = Math.round((x.m - x.p) / x.m * 100), k = cart[x.id]||0;
+    return `<div class="card t-${x.c}"><div class="img"><span class="off">${off}% off</span>${x.e}</div>
+<div class="nm">${x.n}</div><div class="pr">${rs(x.p)}<span class="mrp">${rs(x.m)}</span></div>
+${k ? `<div class="step"><button onclick="chg(${x.id},-1)" aria-label="Kam karo">−</button><b>${k}</b><button onclick="chg(${x.id},1)" aria-label="Badhao">+</button></div>` : `<button class="add" onclick="chg(${x.id},1)">Cart mein daalo</button>`}</div>`;
+  }).join("") : `<div class="empty">Ye saman list mein nahi hai. WhatsApp par dukaan se poochho.</div>`;
+}
+function chg(id,d){
+  cart[id] = (cart[id]||0) + d; if(cart[id] <= 0) delete cart[id];
+  upd(); draw();
+  if(d > 0){ const p = $("pill"); p.classList.remove("bump"); void p.offsetWidth; p.classList.add("bump"); }
+}
+function total(){ return PRODUCTS.reduce((s,x) => s + (cart[x.id]||0) * x.p, 0); }
+function mrpTotal(){ return PRODUCTS.reduce((s,x) => s + (cart[x.id]||0) * x.m, 0); }
+function count(){ return Object.values(cart).reduce((a,b) => a+b, 0); }
+
+function upd(){
+  $("pill").classList.toggle("on", count() > 0);
+  $("cnt").textContent = count() + " items";
+  $("sum").textContent = rs(total());
+  $("tot").textContent = rs(total());
+  const sv = mrpTotal() - total();
+  $("save").textContent = sv > 0 ? "Aapne " + rs(sv) + " bachaye" : "";
+  const items = PRODUCTS.filter(x => cart[x.id]);
+  $("lines").innerHTML = items.length ? items.map(x =>
+    `<div class="row"><span>${x.e} ${x.n}<br><small style="color:var(--muted)">${rs(x.p)}</small></span><span class="qty"><button onclick="chg(${x.id},-1)">−</button>${cart[x.id]}<button onclick="chg(${x.id},1)">+</button></span></div>`
+  ).join("") : `<p style="color:var(--muted)">Cart khaali hai. Saman chuno aur wapas aao.</p>`;
+}
+function openCart(){ upd(); $("cartPanel").style.display = ""; $("donePanel").style.display = "none"; $("sheet").classList.add("on"); }
+function closeCart(){ $("sheet").classList.remove("on"); }
+
+function sendOrder(){
+  if(!count()){ alert("Pehle kuch item cart mein daalo."); return; }
+  const name = $("name").value.trim(), phone = $("phone").value.trim(), addr = $("addr").value.trim();
+  if(!name || !phone || !addr){ alert("Naam, mobile aur address bharo."); return; }
+  const lines = PRODUCTS.filter(x => cart[x.id]).map(x => `• ${x.n} × ${cart[x.id]} = ${rs(x.p*cart[x.id])}`).join("\n");
+  const pm = document.querySelector('input[name="pm"]:checked').value;
+  const id = "MS" + Math.floor(1000 + Math.random() * 9000);
+  const pt = {COD:"Cash on delivery", UPI:"UPI (customer abhi pay karega)", QR:"QR scan (customer abhi pay karega)"}[pm];
+  const msg = `Naya order ${id} – ${SHOP_NAME}\n\n${lines}\n\nTotal: ${rs(total())}\nPayment: ${pt}\n\nNaam: ${name}\nMobile: ${phone}\nAddress: ${addr}`;
+  const order = {id, pm, amt: total()};
+  try{ localStorage.setItem("lastOrder", JSON.stringify(order)); }catch(e){}
+  window.open("https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(msg), "_blank");
+  Object.keys(cart).forEach(k => delete cart[k]); upd(); draw();
+  renderDone(order);
+}
+function renderDone(o){
+  const dp = DELIVERY_PHONE || PHONE, dl = DELIVERY_PHONE ? "Delivery wale ko call karo" : "Dukaan ko call karo";
+  const upiLink = "upi://pay?pa=" + UPI_ID + "&pn=" + encodeURIComponent(SHOP_NAME) + "&am=" + o.amt + "&cu=INR&tn=" + o.id;
+  const payOn = UPI_ID && o.amt > 0 && (o.pm === "UPI" || o.pm === "QR");
+  const payHtml = !payOn ? "" : o.pm === "UPI"
+    ? `<div class="btnrow"><a href="${upiLink}">📲 ${rs(o.amt)} UPI se bharo</a></div>`
+    : `<div id="qr"></div><p class="hint" style="text-align:center">Kisi bhi UPI app se scan karke ${rs(o.amt)} bharo</p>`;
+  const wst = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent("Mera order " + o.id + " ka status kya hai?");
+  $("donePanel").innerHTML = `<h3>Order bheja gaya ✅</h3><div class="hint">Aapka order number</div><div class="oid">${o.id}</div>${payHtml}
+<p class="hint" style="margin-top:12px">Order ka safar</p>
+<ol class="steps"><li><b>1</b>Dukaan aapka order WhatsApp par confirm karegi</li><li><b>2</b>Saman pack hoga</li><li><b>3</b>Delivery wale ke nikalte hi aapko WhatsApp par live location milegi</li><li><b>4</b>Ghar par delivery</li></ol>
+<div class="btnrow"><a href="${wst}" target="_blank">📦 Order ka status poochho</a><a class="g" href="tel:${dp}">📞 ${dl}</a><button class="g" onclick="closeCart()">Band karo</button></div>`;
+  $("cartPanel").style.display = "none"; $("donePanel").style.display = "block"; $("sheet").classList.add("on");
+  if(payOn && o.pm === "QR" && typeof QRCode !== "undefined") new QRCode($("qr"), {text: upiLink, width: 200, height: 200});
+}
+function openTrack(){
+  let o = null; try{ o = JSON.parse(localStorage.getItem("lastOrder")); }catch(e){}
+  if(!o){ const id = (prompt("Apna order number likho (jaise MS1234)") || "").trim().toUpperCase(); if(!id) return; o = {id, pm:"COD", amt:0}; }
+  renderDone(o);
+}
+draw(); upd();
+</script>
+</body>
+</html>
